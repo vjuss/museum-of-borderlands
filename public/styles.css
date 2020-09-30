@@ -1,0 +1,322 @@
+html,
+
+html {
+  height: 100%;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: #FFE4E1;
+  background: linear-gradient(#FFE4E1, thistle);
+  margin: 0;
+  height: 100%;
+  width:100%;
+  background-attachment: fixed;
+}
+
+
+header {
+  text-align: center;
+}
+
+main {
+  min-height: 80vh;
+  width: 10%;
+}
+
+h1 {
+  font-family: 'Messapia-Bold', serif;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateY(-5%);
+  transform: translateX(-50%);
+}
+
+h2 {
+  font-family: 'Messapia-Bold', serif;
+  text-align: center;
+}
+
+
+
+.video-container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+
+
+.video-container video {
+  width: 40%;
+  height: 40%;
+  min-height: 224px;
+  max-height: 600px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  }
+
+.video-container #caption {
+
+  display: block;
+  position: absolute;
+  top: 76%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  font-family: 'Messapia-Bold', serif;
+  font-size: small;
+  }
+
+
+input[type=button] {
+  font-family: 'Messapia-Bold', serif;
+
+  font-size: small;
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 8px 8px;
+  text-decoration: none;
+  cursor: pointer;
+  max-width: 90px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  right:3%;
+  text-align: center;
+}
+
+input[type=submit] {
+  font-family: 'Messapia-Bold', serif;
+
+  font-size: small;
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 8px 8px;
+  text-decoration: none;
+  cursor: pointer;
+  max-width: 90px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left:3%;
+  text-align: center;
+}
+
+input[type=back] {
+  font-family: 'Messapia-Bold', serif;
+
+  font-size: small;
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 8px 8px;
+  text-decoration: none;
+  cursor: pointer;
+  max-width: 90px;
+  width: 100%;
+  position: absolute;
+  top: 19%;
+  left:3%;
+  text-align: center;
+}
+
+
+.text {
+  position: absolute;
+  top: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Vollkorn', serif;
+}
+
+.text p{
+  text-align: center;
+  padding:  0 26%;
+  font-family: 'Vollkorn', serif;
+
+  font-size: x-large;
+}
+
+@font-face {
+font-family: "Messapia-Bold";
+src: url("font/Messapia-Bold.woff2") format ("woff2"),
+src: url("font/Messapia-Bold.woff") format ("woff");
+}
+
+
+
+.logo{
+  width: 300px;
+  height: 160px;
+  position: absolute;
+  top: 1.5vw;
+  left: 1.5vw;
+  display: block;
+  overflow: visible;
+}
+
+#icon{
+  position: absolute; ´
+  width:100%;
+  height:100%;
+  overflow: visible;
+}
+
+#icon > *{
+   display: inline-block;
+   position: absolute;
+   overflow: visible;
+}
+#icon div span{
+	display:none;
+}
+
+
+#logotext{
+  width:100%;
+  height:100%;
+  background-image:url(/logo/final_transparent.svg) ;
+  background-size: cover;
+  background-position: right;
+  overflow: visible;
+
+}
+
+#box1{
+  width:100%;
+  height:100%;
+  background-image:url(/logo/final_upperbox.svg) ;
+  background-size: cover;
+  background-position: right;
+
+  animation-name: stretch1;
+  animation-timing-function: ease-out;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  transform-origin: 97% 50%;
+  overflow: visible;
+}
+
+#box2{
+  width:100%;
+  height:100%;
+  background-image:url(/logo/final_midbox.svg) ;
+  background-size: cover;
+  background-position: right;
+  overflow: visible;
+}
+
+#box3{
+  width:100%;
+  height:100%;
+  background-image:url(/logo/final_lowestbox.svg) ;
+  background-size: cover;
+  background-position: right;
+  animation-name: stretch3;
+  animation-duration: 1.3s;
+  animation-timing-function: ease-out;
+  animation-delay: 4s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  transform-origin: 97% 50%;
+  overflow: visible;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .logo {
+    width: 200px;
+    height: 107px;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .logo {
+    width: 100px;
+    height: 53px;
+  }
+}
+
+
+@keyframes stretch1 {
+  0% {
+     transform: scaleX(0);
+   }
+   100% {
+     transform: scaleX(1);
+   }
+}
+
+@keyframes stretch2 {
+  0% {
+     transform: scaleX(0);
+   }
+   100% {
+     transform: scaleX(1);
+   }
+}
+
+@keyframes stretch3 {
+  0% {
+     transform: scaleX(0);
+   }
+   100% {
+     transform: scaleX(1);
+   }
+}
+
+
+.row {
+  position: absolute;
+  top: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 6px;
+}
+
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding:  0 6px;
+}
+
+.column img {
+  opacity: 1;
+  margin-top: 12px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Broadcaster</title>
+  <meta charset="UTF-8" />
+  <link href="/styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=BioRhyme&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tensorflow/2.0.1/tf.min.js"></script>
+</head>
+<body>
+  <div class="video-container">
+    <video playsinline autoplay muted width="400" height="400" id="webcam"></video>
+    <p id="caption"></p>
+  </div>
+<input type="button" onclick="location.href='archive.html';" value="Archive" />
+<input type="submit" onclick="location.href='about.html';" value="About"/>
+<div class="logo">
+  <div id="icon">
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+    <div id="logotext"></div>
+  </div>
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/broadcast.js"></script>
+</body>
+</html>
