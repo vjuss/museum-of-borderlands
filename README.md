@@ -1,4 +1,4 @@
-Museum of Borderlands
+# Museum of Borderlands
 
 A machine learning web app using Tensorflow.js, WebRTC and node-osc. Streams and classifies webcam feed and sends OSC messages to MaxMSP. Part of an interactive installation.
 
